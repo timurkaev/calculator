@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+<div class="container">
+    <input type="text" id="useInp" placeholder="0" disabled>
+    <input type="text" id="resInp" placeholder="0" disabled>
+    <table>
+        <tr>
+            <td onclick="calculate('(')">(</td>
+            <td onclick="calculate(')')">)</td>
+            <td onclick="clear()">&lt;-</td>
+            <td onclick="calculate('+')" class="vari">+</td>
+        </tr>
+        <tr>
+            <td onclick="calculate('7')">7</td>
+            <td onclick="calculate('8')">8</td>
+            <td onclick="calculate('9')">9</td>
+            <td onclick="calculate('-')" class="vari">-</td>
+        </tr>
+        <tr>
+            <td onclick="calculate('4')">4</td>
+            <td onclick="calculate('5')">5</td>
+            <td onclick="calculate('6')">6</td>
+            <td onclick="calculate('*')" class="vari">*</td>
+        </tr>
+        <tr>
+            <td onclick="calculate('1')">1</td>
+            <td onclick="calculate('2')">2</td>
+            <td onclick="calculate('3')">3</td>
+            <td onclick="calculate('/')" class="vari">/</td>
+        </tr>
+        <tr>
+            <td onclick="reset()">C</td>
+            <td onclick="calculate('0')">0</td>
+            <td onclick="calculate('.')">.</td>
+            <td onclick="result()" class="equalbtn">=</td>
+        </tr>
+    </table>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
